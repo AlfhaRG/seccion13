@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        //funcion simple
+        //declarar
+        function saludo(){
+            console.log("Hola como estas bienvenido!!!");
+            document.write("Hola como estas bienvenido a mi pagina!!!");
+        }
+
+        //llamar funcion
+        saludo();
+
+        //funcion con parametros
+        function sumar(a,b){
+            return a + b;
+        }
+
+        let resultado=sumar(8,5);
+        document.write("La suma es : "+resultado);
+        console.log("La suma es : "+resultado)
+        //funcion que retorna un valor
+        function par(numero){
+            if(numero % 2==0){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        let numero=25;
+        let esNumeroPar=par(numero);
+        document.write("Es "+numero+ " par? "+esNumeroPar);
+        console.log("Es "+numero+ " par? "+esNumeroPar);
+
+    </script>
+</body>
+</html>
